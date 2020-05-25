@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)					# コメント
-project(MY_GRAND_PROJECT)										# プロジェクト名
+project(pcl_beginner_tutorial_2020)										# プロジェクト名
 find_package(PCL 1.7 REQUIRED)									# パッケージの探索
 include_directories(${PCL_INCLUDE_DIRS})						# インクルードディレクトリの設定
 link_directories(${PCL_LIBRARY_DIRS})							# ライブラリディレクトリの設定
