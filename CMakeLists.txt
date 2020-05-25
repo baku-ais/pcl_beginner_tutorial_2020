@@ -5,6 +5,11 @@ include_directories(${PCL_INCLUDE_DIRS})						# インクルードディレク�
 link_directories(${PCL_LIBRARY_DIRS})							# ライブラリディレクトリの設定
 add_definitions(${PCL_DEFINITIONS})								# マクロの定義
 
+include_directories(
+# include
+  ${catkin_INCLUDE_DIRS}
+)
+
 add_executable(pcd_viewer src/pcd_viewer.cpp)
 target_link_libraries(pcd_viewer ${PCL_LIBRARIES})
 
