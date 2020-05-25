@@ -18,6 +18,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+## cmakeでビルドする場合
+# add_executable(pcd_viewer src/pcd_viewer.cpp)
+# target_link_libraries(pcd_viewer ${PCL_LIBRARIES})
+
 add_executable(pcd_viewer src/pcd_viewer.cpp)
 target_link_libraries(pcd_viewer ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
